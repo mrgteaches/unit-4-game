@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystals Collector Game</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    
+  </head>
+
+  <body>
+      <div id="heading">
+          <h1>Gems Collector!</h1>
+      </div>
+      <div id="againWin">You Win! Click to Play Again!</div>
+      <div id="againLose">You Lose! Click to Play Again!</div>
+      <div id="explanation">
+          <p>You will be given a random target number at the start of the game.</p>
+          <br>
+          <p>There are four gems below. By clicking on a gem, you will add a specific amount of points to your total.</p>
+            <br>
+          <p>You win the game by matching your total to the random target number, and you lose the game if your total goes above the random number.</p>
+          <br>
+          <p>The value of each gem is hidden from you until you click on it.</p>
+          <br>
+          <p>Each time the game starts, the value of each gem changes.</p>
+      </div>
+
+    <div id="middle">
+
+
+
+        <div id = "targetText">Target Number: </div>
+
+        <div id="randomNumber"></div>      
+
+        <div id="totals">
+          <h2>Wins: </h2>
+            <h3 id="wins"></h3>
+          <h2>Losses: </h2>
+            <h3 id="losses"></h3>
+        </div>
+
+    </div>      
+    
+
+      <div id="buttons">
+        <button id="button1"><img src="assets/images/red.png" height=60 width=60/></button>
+        <button id="button2"><img src="assets/images/gemstone.png" height=60 width=60/></button>
+        <button id="button3"><img src="assets/images/pink.png" height=60 width=60/></button>
+        <button id="button4"><img src="assets/images/green.png" height=60 width=60/></button>
+      </div>
+
+      <div id="totalText">Your total is: </div>
+
+      <div id="totalScore"></div>
+
+    
+  </body>
+
+</html>
