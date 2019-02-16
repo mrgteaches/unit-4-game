@@ -16,11 +16,16 @@ body {
 }
 
 #againWin {
-    background-color: green;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(25, 104, 25);
     color: white;
     font-size: 40px;
     text-align: center;
-    padding: 40px;
+    padding: 100px 40px;
     width: 75%;
     margin: auto;
     display: none;
@@ -28,15 +33,37 @@ body {
 }
 
 #againLose {
-    background-color: red;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(204, 10, 10);
     color: white;
     font-size: 40px;
     text-align: center;
-    padding: 40px;
+    padding: 100px 40px;
     width: 75%;
     margin: auto;
     display: none;
     
+}
+
+#winButton {
+    padding: 20px;
+    background-color: white;
+    color: green;
+    margin: 20px;
+    text-align: center;
+
+}
+
+#loseButton {
+    padding: 20px;
+    background-color: white;
+    color: red;
+    text-align: center;
+    margin: 20px;
 }
 
 #explanation {
@@ -49,6 +76,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+
 }
 
 #middle {
@@ -91,8 +119,7 @@ body {
     overflow: auto;
     padding: 10px;
     width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -129,4 +156,61 @@ h2 {
 
 h3 {
     float: right;
+}
+
+@media only screen and (max-width: 980px) {
+    #buttons {
+        width: 80%;
+        margin: auto;
+        
+    }
+    #middle {
+        width: 50%;
+    }
+    button {
+        margin: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    #buttons {
+        width: 80%;
+        margin: auto;
+        
+    
+    }
+    #middle {
+        width: 75%;
+    }
+    button {
+        margin: 3px;
+    }
+    #againLose {
+        top: 500px;
+    }
+    #againWin {
+        top: 500px;    
+    }
+       
+}
+
+@media only screen and (max-width: 640px) {
+    #buttons {
+        width: 90%;
+        margin: auto;
+    }
+    #middle {
+        width: 80%;
+    }
+    button {
+        margin: 3px;
+    }
+    #againLose {
+        top: 550px;
+    }
+    #againWin {
+        top: 550px;    
+    }
+    
+    
+        
 }

@@ -50,17 +50,25 @@ $(document).ready(function() {
             $("#againWin").css('display', 'block');     
             wins++;
             $("#wins").text(wins);     
+            $("#winButton").on("click", function() {
+                $("#againWin").hide();
+                resetGame();
+            })
       
            //alert("YOU WIN!! Click to play again!");
-            resetGame();
+           // resetGame();
             
         }
         else if (counter >= randomNumber) {       
             $("#againLose").css('display', 'block');        
             losses++;
             $("#losses").text(losses);
+            $("#loseButton").on("click", function() {
+                $("#againLose").hide();
+                resetGame();
+            })
            // alert("YOU LOSE! Click to play again!");
-            resetGame();
+            //resetGame();
         }
     }
     
