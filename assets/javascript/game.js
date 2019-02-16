@@ -53,11 +53,7 @@ $(document).ready(function() {
             $("#winButton").on("click", function() {
                 $("#againWin").hide();
                 resetGame();
-            })
-      
-           //alert("YOU WIN!! Click to play again!");
-           // resetGame();
-            
+            })    
         }
         else if (counter >= randomNumber) {       
             $("#againLose").css('display', 'block');        
@@ -67,9 +63,7 @@ $(document).ready(function() {
                 $("#againLose").hide();
                 resetGame();
             })
-           // alert("YOU LOSE! Click to play again!");
-            //resetGame();
-        }
+            }
     }
     
     resetGame();
